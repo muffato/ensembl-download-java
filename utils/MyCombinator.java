@@ -1,12 +1,12 @@
 package utils;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
+import java.util.HashMap;
 
 public class MyCombinator<U> {
 
 	public ArrayList<ArrayList<U>> liste = new ArrayList<ArrayList<U>>();
-	private Hashtable<U, Integer> dic = new Hashtable<U, Integer>();
+	private HashMap<U, Integer> dic = new HashMap<U, Integer>();
 	
 	public void addElement(ArrayList<U> elt) {
 		Integer n = new Integer(liste.size());
