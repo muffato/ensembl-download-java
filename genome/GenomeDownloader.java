@@ -4,7 +4,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Iterator;
-import java.util.zip.GZIPOutputStream;
 
 import org.ensembl.datamodel.Gene;
 import org.ensembl.datamodel.Location;
@@ -27,11 +26,11 @@ public class GenomeDownloader {
 		PrintStream outputFull = null;
 		try {
 			// Le fichier avec les genes des vrais chromosomes
-			String fileName = MyVars.genesDownloadFolder + "genes" + species + ".tsv.gz"; 
-			output = new PrintStream(new GZIPOutputStream(new FileOutputStream(fileName)), true);
+			String fileName = MyVars.genesDownloadFolder + "genes" + species + ".tsv"; 
+			output = new PrintStream(new FileOutputStream(fileName), true);
 			// Le fichier avec le genome complet
-			fileName = MyVars.fullGenesDownloadFolder + "genes" + species + ".tsv.gz"; 
-			outputFull = new PrintStream(new GZIPOutputStream(new FileOutputStream(fileName)), true);
+			fileName = MyVars.fullGenesDownloadFolder + "genes" + species + ".tsv"; 
+			outputFull = new PrintStream(new FileOutputStream(fileName), true);
 		} catch (IOException e) {
 			System.out.println("Echec");
 			return;

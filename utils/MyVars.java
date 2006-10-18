@@ -35,11 +35,13 @@ public class MyVars {
 		table.put("Stickleback", "Gasterosteus Aculeatus");
 		table.put("Medaka", "Oryzias Latipes");
 		table.put("Zebrafish", "Danio Rerio");
-		table.put("C_elegans", "Caenorhabditis elegans");
 		table.put("C_intestinalis", "Ciona Intestinalis");
+		table.put("C_savignyi", "Ciona Savignyi");
+		table.put("C_elegans", "Caenorhabditis elegans");
 		table.put("Fruitfly", "Drosophila Melanogaster");
 		table.put("Mosquito", "Anopheles Gambiae");
 		table.put("Yeast", "Saccharomyces Cerevisiae");
+		table.put("Aedes", "Aedes Aegypti");
 		
 		return table;
 	}
@@ -70,11 +72,12 @@ public class MyVars {
 		table.put("Zebrafish", new String[] {"Zv6_NA.*", "Zv6_scaffold.*"});
 		table.put("Fugu", new String[] {"scaffold_.*"});
 
-		table.put("C_elegans", new String[] {"MtDNA"});
 		table.put("C_intestinalis", new String[] {"scaffold_.*"});
+		table.put("C_savignyi", new String[] {"reftig.*"});
+		table.put("C_elegans", new String[] {"MtDNA"});
 		table.put("Fruitfly", new String[] {"U", ".h"});
 		table.put("Mosquito", new String[] {"UNKN"});
-		table.put("Yeast", new String[] {"Mito"});
+		table.put("Aedes", new String[] {"supercont.*"});
 		
 		return table;
 	}

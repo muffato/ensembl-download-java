@@ -262,7 +262,7 @@ public class OrthosDownloader {
 		dicConstituants.put(node, cst);
 	}
 
-	private void loadSpecies(String name) {
+	public void loadSpecies(String name) {
 		ArrayList<String> tab = new ArrayList<String>();
 		String fileName = MyVars.downloadFolder + "genes/genes" + name + ".tsv.gz";
 		System.out.print("Chargement de " + name + " ... ");
